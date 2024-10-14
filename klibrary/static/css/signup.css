@@ -1,0 +1,11 @@
+.container{
+    box-sizing: border-box;
+    box-shadow: 1px 3px 5px;
+}
+.container h1{
+    text-shadow: 1px 3px 5px;
+    background: linear-gradient(to top,rgba(13, 13, 13, 0.464),rgba(252, 252, 255, 0.289));
+    background-position: left;
+    background-repeat: no-repeat;
+   color: rgb(75, 4, 4);
+}

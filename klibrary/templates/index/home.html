@@ -1,0 +1,70 @@
+{% extends "index/base.html" %}
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>{% block title %}home{% endblock title %}home</title>
+  </head>
+  <body>
+    {% block content %}
+    <style>
+        body{
+          
+          background-image: url('{% static "images/bgbook7.jpg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+      </style>
+    <div class="container-fluid">
+        <h1 class="text-center text-white fw-bold bg-danger py-2">k-library</h1>
+        <img src="{% static '/images/head.jpg' %}" class="img-fluid w-100 mb-3" style="height: 600px;" alt="header">
+
+        <div class="container-fluid">
+        <div class="row">
+        <div class="sm col-4">
+            <img src="{% static 'images/artcl1.jpg' %}" class="img-thumbnail  my-3" style="width: 400px; height: 300px;" alt="img1">
+        </div>
+        <div class="sm col-8">
+            <p>{% lorem 4 p random %}</p>
+        </div>
+        </div>
+        
+        <hr>
+
+        <div class="row">
+        <div class="sm col-8">
+            <p>{% lorem 3 p random %}</p>
+        </div>
+        <div class="sm col-4 text-end">
+            <img src="{% static 'images/artcl2.jpg' %}" class="img-thumbnail" style="width: 400px; height: 300px;" alt="img2">
+        </div> 
+        </div>
+
+        <hr>
+
+        <div class="row">
+        <div class="sm col-4">
+            <img src="{% static 'images/artcl3.jpg' %}" class="img-thumbnail my-3" style="width: 400px; height: 300px;" alt="img3">
+        </div>
+        <div class="sm col-8">
+            <p>{% lorem 4 p random %}</p>
+            </div>
+            </div>
+        </div>
+        </div>
+    {% endblock content %}
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
